@@ -1,14 +1,40 @@
 import React, { useState, useEffect } from "react";
 import { twMerge } from "tailwind-merge";
+// Helpers
+import {
+  setColors,
+  setSizes,
+  setWeights,
+  setHovers,
+} from "../helpers/setClasses";
 
 interface AlanAnchorProps {
   children: React.ReactNode;
   type: string;
-  color: string;
+  color: "white" | "black" | "gray" | "default";
+  size?:
+    | "small"
+    | "medium"
+    | "large"
+    | "xlarge"
+    | "xxlarge"
+    | "xxxlarge"
+    | "xxxxlarge"
+    | "default";
+  weight?: "bold" | "default";
+  hover?: "white" | "black" | "gray" | "default";
   href: string;
 }
 
-function AlanAnchor({ children, type, color, href }: AlanAnchorProps) {
+function AlanAnchor({
+  children,
+  type,
+  color,
+  size,
+  weight,
+  hover,
+  href,
+}: AlanAnchorProps) {
   const [typeTitle, setTypeTitle] = useState("anchor");
 
   useEffect(() => {
@@ -24,14 +50,11 @@ function AlanAnchor({ children, type, color, href }: AlanAnchorProps) {
           <a
             href={href}
             className={twMerge(
-              "font-roboto font-normal hover:cursor-pointer hover:text-sky-400 md:text-base lg:text-lg",
-              color === "white"
-                ? "text-white"
-                : color === "black"
-                  ? "text-black"
-                  : color === "gray"
-                    ? "text-gray-400"
-                    : "bg-gradient-to-r from-sky-400 to-amber-500 bg-clip-text text-transparent",
+              "font-roboto",
+              setSizes(size || "large"),
+              setColors(color),
+              setHovers(hover || "default"),
+              setWeights(weight || "default"),
             )}
           >
             {children}

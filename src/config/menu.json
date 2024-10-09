@@ -1,0 +1,13 @@
+{
+  "menu": [
+    { "name": "Inicio", "link": "/" },
+    { "name": "Sobre mi", "link": "/about" },
+    { "name": "Proyectos", "link": "/projects" },
+    { "name": "Contacto", "link": "/contact" }
+  ],
+  "socials": [
+    { "name": "LinkedIn", "link": "https://www.linkedin.com/in/alanmgg/" },
+    { "name": "Behance", "link": "https://www.behance.net/alanmgg" },
+    { "name": "Github", "link": "https://github.com/alanmgg" }
+  ]
+}

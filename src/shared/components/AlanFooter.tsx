@@ -5,29 +5,36 @@ import AlanTitle from "./AlanTitle";
 import AlanText from "./AlanText";
 import AlanAnchor from "./AlanAnchor";
 import AlanLazyLoad from "./AlanLazyLoad";
-// Icons
-import { FaCommentAlt } from "react-icons/fa";
 // Json
-import { paths, socials } from "./../../config/footer.json";
+import { menu, socials } from "./../../config/menu.json";
 
 function AlanFooter() {
-  const [pathsJson, setPathsJson] = useState(null);
-  const [socialsJson, setSocialsJson] = useState(null);
+  const [pathsJson, setPathsJson] = useState<{ name: string; link: string }[]>(
+    [],
+  );
+  const [socialsJson, setSocialsJson] = useState<
+    { name: string; link: string }[]
+  >([]);
 
   useEffect(() => {
-    setPathsJson(paths);
+    setPathsJson(menu);
     setSocialsJson(socials);
   }, []);
 
   return (
     <>
-      <footer className="mx-auto bg-black px-[30px] py-[50px] lg:px-[180px]">
+      <footer className="mx-auto bg-black px-[30px] py-[50px] xl:px-[220px]">
         <div className="mb-10">
-          <AlanTitle type="title" color="white">
+          <AlanTitle type="title" color="white" size="xxxxlarge" weight="bold">
             ¿Listo para hacer algo increíble?
           </AlanTitle>
 
-          <AlanTitle type="title" color="gradient">
+          <AlanTitle
+            type="title"
+            color="default"
+            size="xxxxlarge"
+            weight="bold"
+          >
             Trabajemos juntos. Contáctame.
           </AlanTitle>
         </div>
@@ -49,10 +56,7 @@ function AlanFooter() {
               color="gray"
               href="mailto:alanfmorag@gmail.com"
             >
-              <div className="flex max-w-fit items-center gap-2">
-                <FaCommentAlt />
-                alanfmorag@gmail.com
-              </div>
+              alanfmorag@gmail.com
             </AlanAnchor>
           </div>
 
@@ -61,7 +65,7 @@ function AlanFooter() {
               {pathsJson !== null
                 ? pathsJson.map((path) => (
                     <div key={path.name}>
-                      <AlanAnchor type="anchor" color="white" href={path.path}>
+                      <AlanAnchor type="anchor" color="white" href={path.link}>
                         {path.name}
                       </AlanAnchor>
                     </div>
@@ -73,7 +77,7 @@ function AlanFooter() {
               {socialsJson !== null
                 ? socialsJson.map((path) => (
                     <div key={path.name}>
-                      <AlanAnchor type="anchor" color="white" href={path.path}>
+                      <AlanAnchor type="anchor" color="white" href={path.link}>
                         {path.name}
                       </AlanAnchor>
                     </div>
