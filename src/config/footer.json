@@ -1,0 +1,13 @@
+{
+  "paths": [
+    { "name": "Inicio", "path": "/" },
+    { "name": "Proyectos", "path": "/projects" },
+    { "name": "Sobre mi", "path": "/about" },
+    { "name": "Contacto", "path": "/contact" }
+  ],
+  "socials": [
+    { "name": "LinkedIn", "path": "https://www.linkedin.com/in/alanmgg/" },
+    { "name": "Behance", "path": "https://www.behance.net/alanmgg" },
+    { "name": "Github", "path": "https://github.com/alanmgg" }
+  ]
+}

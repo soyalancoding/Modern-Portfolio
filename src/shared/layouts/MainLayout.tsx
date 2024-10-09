@@ -1,17 +1,17 @@
 import React from "react";
 // Components
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import AlanHeader from "../components/AlanHeader";
+import AlanFooter from "../components/AlanFooter";
 
 function MainLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <main>
-        <Header />
+        <AlanHeader />
 
-        <div className="mx-auto w-full">{children}</div>
+        <div>{children}</div>
 
-        <Footer />
+        <AlanFooter />
       </main>
     </>
   );
