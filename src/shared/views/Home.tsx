@@ -1,7 +1,9 @@
+import HomeMain from "../../modules/home/HomeMain";
+
 function Home() {
   return (
     <>
-      <p className="font-montserrat text-3xl">Home</p>
+      <HomeMain />
     </>
   );
 }
