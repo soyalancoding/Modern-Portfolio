@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 // Layouts
-import MainLayout from "./shared/layouts/MainLayout";
+import MainLayout from "@/shared/layouts/MainLayout";
 // Views
-import Home from "./shared/views/Home";
+import Home from "@/shared/views/Home";
 
 function App() {
   return (

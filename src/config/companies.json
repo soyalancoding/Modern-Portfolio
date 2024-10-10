@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Abricot",
+    "web": "https://abricot.com.mx/",
+    "body": "Desarrollo de aplicaciones web innovadoras con React y Python.",
+    "img": "/companies/abricot.webp"
+  },
+  {
+    "name": "Telcel",
+    "web": "https://www.telcel.com/",
+    "body": "Creación de aplicaciones web modernas y eficientes con React.",
+    "img": "/companies/telcel.webp"
+  },
+  {
+    "name": "AT&T",
+    "web": "https://www.att.com.mx/",
+    "body": "Automatización de tareas de TI mediante scripts avanzados.",
+    "img": "/companies/att.webp"
+  },
+  {
+    "name": "Cyttek Group",
+    "web": "https://cyttek.com/",
+    "body": "Desarrollo de aplicaciones web seguras y escalables con Angular y Django.",
+    "img": "/companies/cyttek.webp"
+  },
+  {
+    "name": "Banco Azteca",
+    "web": "https://www.bancoazteca.com.mx/",
+    "body": "Soluciones web bancarias confiables usando Angular y Django.",
+    "img": "/companies/bancoazteca.webp"
+  },
+  {
+    "name": "Babel",
+    "web": "https://babelgroup.com/",
+    "body": "Automatizaciones DevOps y desarrollo de aplicaciones web eficientes.",
+    "img": "/companies/babel.webp"
+  },
+  {
+    "name": "BBVA",
+    "web": "https://www.bbva.com/es/us/",
+    "body": "Desarrollo de aplicaciones web interactivas con Vue para mejorar la experiencia del usuario.",
+    "img": "/companies/bbva.webp"
+  }
+]

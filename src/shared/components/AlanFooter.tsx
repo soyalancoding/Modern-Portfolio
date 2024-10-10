@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
 // Components
-import AlanTitle from "./AlanTitle";
-import AlanText from "./AlanText";
-import AlanAnchor from "./AlanAnchor";
-import AlanLazyLoad from "./AlanLazyLoad";
+import AlanTitle from "@/shared/components/AlanTitle";
+import AlanText from "@/shared/components/AlanText";
+import AlanAnchor from "@/shared/components/AlanAnchor";
+import AlanLazyLoad from "@/shared/components/AlanLazyLoad";
 // Json
-import { menu, socials } from "./../../config/menu.json";
+import { menu, socials } from "@/config/menu.json";
 
 function AlanFooter() {
   const [pathsJson, setPathsJson] = useState<{ name: string; link: string }[]>(

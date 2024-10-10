@@ -1,17 +1,26 @@
+import { useNavigate } from "react-router-dom";
 // Components
 import AlanTitle from "../../shared/components/AlanTitle";
 import AlanText from "../../shared/components/AlanText";
 import AlanButton from "../../shared/components/AlanButton";
 import AlanLazyLoad from "../../shared/components/AlanLazyLoad";
+// helpers
+import { handleDownload } from "@/shared/helpers/handleDownload";
 
 function HomeMain() {
-  function onHandleClick() {
-    console.log("Hola, Alan. ¡Vamos a trabajar juntos!");
+  const navigate = useNavigate();
+
+  function onHandleContact() {
+    navigate("/contact");
+  }
+
+  function onHandleDownload() {
+    handleDownload();
   }
 
   return (
     <>
-      <div className="flex flex-col gap-10 px-[30px] py-[20px] lg:flex-row xl:px-[220px]">
+      <div className="mb-10 flex flex-col gap-10 px-[30px] py-[30px] lg:flex-row xl:px-[220px]">
         <div className="order-2 grid content-center lg:order-1">
           <AlanTitle
             type="title"
@@ -36,13 +45,13 @@ function HomeMain() {
           </div>
 
           <div className="flex flex-row gap-4">
-            <AlanButton clickButton={() => onHandleClick()}>
+            <AlanButton clickButton={() => onHandleContact()}>
               <AlanText type="text" color="white" weight="default">
                 Contáctame
               </AlanText>
             </AlanButton>
 
-            <AlanButton clickButton={() => onHandleClick()}>
+            <AlanButton clickButton={() => onHandleDownload()}>
               <AlanText type="text" color="white" weight="default">
                 Descargar CV
               </AlanText>
@@ -54,7 +63,7 @@ function HomeMain() {
           <AlanLazyLoad
             src="/images/profile.webp"
             alt="AlanCoding Perfil"
-            className="w-[250px] rounded-full lg:w-[350px]"
+            className="w-[250px] rounded-full lg:w-[450px]"
           />
         </div>
       </div>

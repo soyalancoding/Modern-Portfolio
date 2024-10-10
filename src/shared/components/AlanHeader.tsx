@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 // Components
-import AlanLazyLoad from "./AlanLazyLoad";
-import AlanAnchor from "./AlanAnchor";
-import AlanMenu from "./AlanMenu";
+import AlanLazyLoad from "@/shared/components/AlanLazyLoad";
+import AlanAnchor from "@/shared/components/AlanAnchor";
+import AlanMenu from "@/shared/components/AlanMenu";
 // Icons
 import { FaBars, FaChevronUp } from "react-icons/fa";
 // Json
-import { menu } from "./../../config/menu.json";
+import { menu } from "@/config/menu.json";
 
 function AlanHeader() {
   const [header, setHeader] = useState<{ name: string; link: string }[]>([]);

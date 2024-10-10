@@ -6,7 +6,7 @@ import {
   setSizes,
   setWeights,
   setHovers,
-} from "../helpers/setClasses";
+} from "@/shared/helpers/handleClasses";
 
 interface AlanAnchorProps {
   children: React.ReactNode;

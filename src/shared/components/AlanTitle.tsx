@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { twMerge } from "tailwind-merge";
 // Helpers
-import { setColors, setSizes, setWeights } from "../helpers/setClasses";
+import {
+  setColors,
+  setSizes,
+  setWeights,
+} from "@/shared/helpers/handleClasses";
 
 interface AlanTitleProps {
   children: React.ReactNode;
@@ -33,7 +37,7 @@ function AlanTitle({ children, type, color, size, weight }: AlanTitleProps) {
       {typeTitle === "title" ? (
         <h1
           className={twMerge(
-            "font-montserrat w-fit",
+            "w-fit font-montserrat",
             setSizes(size || "default"),
             setColors(color),
             setWeights(weight || "default"),

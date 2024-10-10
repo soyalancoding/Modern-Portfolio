@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { twMerge } from "tailwind-merge";
 // Components
-import AlanAnchor from "./AlanAnchor";
+import AlanAnchor from "@/shared/components/AlanAnchor";
 // Json
-import { menu } from "./../../config/menu.json";
+import { menu } from "@/config/menu.json";
 
 function AlanMenu({ openMenu }: { openMenu: boolean }) {
   const [menuJson] = useState(menu);

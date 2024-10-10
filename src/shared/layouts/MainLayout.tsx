@@ -1,7 +1,7 @@
 import React from "react";
 // Components
-import AlanHeader from "../components/AlanHeader";
-import AlanFooter from "../components/AlanFooter";
+import AlanHeader from "@/shared/components/AlanHeader";
+import AlanFooter from "@/shared/components/AlanFooter";
 
 function MainLayout({ children }: { children: React.ReactNode }) {
   return (

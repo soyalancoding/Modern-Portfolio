@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { twMerge } from "tailwind-merge";
 // Helpers
-import { setColors, setSizes, setWeights } from "../helpers/setClasses";
+import {
+  setColors,
+  setSizes,
+  setWeights,
+} from "@/shared/helpers/handleClasses";
 
 interface AlanTextProps {
   children: React.ReactNode;
@@ -24,7 +28,7 @@ function AlanText({ children, type, color, weight }: AlanTextProps) {
       {typeTitle === "text" ? (
         <p
           className={twMerge(
-            "font-roboto w-fit",
+            "w-fit font-roboto",
             setSizes("large"),
             setColors(color),
             setWeights(weight || "default"),
