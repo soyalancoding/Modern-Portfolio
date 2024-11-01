@@ -17,7 +17,7 @@ function HomeCompanies() {
       <div className="flex flex-col gap-3 px-[30px] py-[30px] xl:px-[220px]">
         <div className="grid justify-items-center">
           <AlanTitle type="title" color="black" size="xxlarge" weight="bold">
-            Empresas con las que he trabajado.
+            Empresas en las que he trabajado.
           </AlanTitle>
         </div>
 

@@ -11,10 +11,19 @@ interface AlanTextProps {
   children: React.ReactNode;
   type: string;
   color: "white" | "black" | "gray" | "default";
+  size?:
+    | "small"
+    | "medium"
+    | "large"
+    | "xlarge"
+    | "xxlarge"
+    | "xxxlarge"
+    | "xxxxlarge"
+    | "default";
   weight?: "bold" | "default";
 }
 
-function AlanText({ children, type, color, weight }: AlanTextProps) {
+function AlanText({ children, type, color, size, weight }: AlanTextProps) {
   const [typeTitle, setTypeTitle] = useState("text");
 
   useEffect(() => {
@@ -29,7 +38,7 @@ function AlanText({ children, type, color, weight }: AlanTextProps) {
         <p
           className={twMerge(
             "w-fit font-roboto",
-            setSizes("large"),
+            setSizes(size || "default"),
             setColors(color),
             setWeights(weight || "default"),
           )}

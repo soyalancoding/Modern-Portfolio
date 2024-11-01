@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+// Framer Motion
+import { motion } from "framer-motion";
 // Components
 import AlanTitle from "../../shared/components/AlanTitle";
 import AlanText from "../../shared/components/AlanText";
@@ -37,10 +39,20 @@ function HomeMain() {
 
           <div className="mb-7 mt-5">
             <AlanText type="text" color="gray" weight="default">
-              ¡Hola! soy Alan, un Software Solutions Development con experiencia
-              en desarrollo web. Especializado en automatización y despliegue
-              continuo, combinando habilidades de DevOps y desarrollo web para
-              crear soluciones eficientes y escalables. 💡
+              ¡Hola! soy <span className="font-bold text-gray-600">Alan</span>,
+              un{" "}
+              <span className="font-bold text-gray-600">
+                Software Solutions Development
+              </span>{" "}
+              con experiencia en desarrollo web. Especializado en{" "}
+              <span className="font-bold text-gray-600">
+                automatización y despliegue continuo
+              </span>
+              , combinando habilidades de{" "}
+              <span className="font-bold text-gray-600">
+                DevOps y desarrollo web
+              </span>{" "}
+              para crear soluciones eficientes y escalables. 💡
             </AlanText>
           </div>
 
@@ -59,12 +71,41 @@ function HomeMain() {
           </div>
         </div>
 
-        <div className="order-1 flex h-full w-full justify-center lg:order-2 lg:justify-end">
-          <AlanLazyLoad
-            src="/images/profile.webp"
-            alt="AlanCoding Perfil"
-            className="w-[250px] rounded-full lg:w-[450px]"
-          />
+        <div className="relative order-1 flex h-full w-full items-center justify-center lg:order-2">
+          <div className="absolute w-[250px] lg:w-[450px]">
+            <AlanLazyLoad
+              src="/images/profile.webp"
+              alt="AlanCoding Perfil"
+              className="w-[250px] rounded-full lg:w-[450px]"
+            />
+          </div>
+
+          <motion.svg
+            className="m-3 w-[300px] lg:w-[500px]"
+            fill="transparent"
+            viewBox="0 0 506 506"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <motion.circle
+              cx="253"
+              cy="253"
+              r="250"
+              stroke="rgb(56 189 248)"
+              strokeWidth="4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              initial={{ strokeDasharray: "24 10 0 0" }}
+              animate={{
+                strokeDasharray: ["15 120 25 25", "16 25 92 72", "4 250 22 22"],
+                rotate: [120, 360],
+              }}
+              transition={{
+                duration: 8,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            />
+          </motion.svg>
         </div>
       </div>
     </>
