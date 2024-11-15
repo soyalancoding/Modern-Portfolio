@@ -1,0 +1,24 @@
+{
+  "cardsProjectsHome": [
+    {
+      "className": "lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+      "image": "crypto-market.webp",
+      "url": "https://snack.expo.dev/@alanmgg/crypto-market"
+    },
+    {
+      "className": "lg:col-start-3 lg:col-end-5 lg:row-start-1 lg:row-end-2",
+      "image": "macos.webp",
+      "url": "https://alancoding-macos.vercel.app/"
+    },
+    {
+      "className": "lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-4",
+      "image": "crossy-road.webp",
+      "url": "https://alancoding-crossy-road.vercel.app/"
+    },
+    {
+      "className": "lg:col-start-3 lg:col-end-5 lg:row-start-2 lg:row-end-4",
+      "image": "basic-look.webp",
+      "url": "https://www.figma.com/file/Qqkt0eyEPcdFn3Esv9XiDZ/Basic-Look?type=design&node-id=2-2&mode=design"
+    }
+  ]
+}

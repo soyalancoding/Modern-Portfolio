@@ -24,7 +24,7 @@ function AlanStairs() {
         return (
           <motion.div
             key={index}
-            className="relative h-full w-full bg-white"
+            className="relative h-full w-full bg-gradient-to-br from-sky-400 to-amber-500"
             variants={stairAnimation}
             initial="initial"
             animate="animate"

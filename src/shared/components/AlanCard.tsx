@@ -15,7 +15,7 @@ function AlanCard({ img, name, web, body }: AlanCardProps) {
       <figure
         className={twMerge(
           "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
-          "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
+          "border-sky-400/[.6] bg-sky-400/[.01] duration-100 hover:scale-110 hover:bg-sky-400/[.1]",
         )}
       >
         <div className="flex flex-row items-center gap-2">

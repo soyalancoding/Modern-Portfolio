@@ -1,5 +1,6 @@
 import HomeMain from "@/modules/home/HomeMain";
 import HomeStats from "@/modules/home/HomeStats";
+import HomeProjects from "@/modules/home/HomeProjects";
 import HomeCompanies from "@/modules/home/HomeCompanies";
 
 function Home() {
@@ -7,6 +8,7 @@ function Home() {
     <>
       <HomeMain />
       <HomeStats />
+      <HomeProjects />
       <HomeCompanies />
     </>
   );
