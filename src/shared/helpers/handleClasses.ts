@@ -12,6 +12,7 @@ const weightClasses = {
 };
 
 const sizeClasses = {
+  xsmall: "text-xs",
   small: "text-sm",
   medium: "md:text-sm lg:text-base",
   large: "md:text-base lg:text-lg",

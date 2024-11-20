@@ -1,12 +1,12 @@
 {
   "cardsProjectsHome": [
     {
-      "className": "lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+      "className": "lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-2",
       "image": "crypto-market.webp",
       "url": "https://snack.expo.dev/@alanmgg/crypto-market"
     },
     {
-      "className": "lg:col-start-3 lg:col-end-5 lg:row-start-1 lg:row-end-2",
+      "className": "lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-2",
       "image": "macos.webp",
       "url": "https://alancoding-macos.vercel.app/"
     },

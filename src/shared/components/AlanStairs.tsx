@@ -14,17 +14,17 @@ function AlanStairs() {
   };
 
   function reverseIndex(index: number) {
-    const totalSteps = 8;
+    const totalSteps = 7;
     return totalSteps - index;
   }
 
   return (
     <>
-      {[...Array(8)].map((_, index) => {
+      {[...Array(7)].map((_, index) => {
         return (
           <motion.div
             key={index}
-            className="relative h-full w-full bg-gradient-to-br from-sky-400 to-amber-500"
+            className="relative h-full w-full bg-sky-400"
             variants={stairAnimation}
             initial="initial"
             animate="animate"

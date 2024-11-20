@@ -1,6 +1,7 @@
 import { twMerge } from "tailwind-merge";
 // Components
 import AlanLazyLoad from "./AlanLazyLoad";
+import AlanText from "./AlanText";
 
 interface AlanCardProps {
   img: string;
@@ -26,15 +27,23 @@ function AlanCard({ img, name, web, body }: AlanCardProps) {
           />
 
           <div className="flex flex-col">
-            <figcaption className="font-roboto text-sm font-medium">
-              {name}
+            <figcaption>
+              <AlanText type="text" color="black" weight="bold" size="small">
+                {name}
+              </AlanText>
             </figcaption>
 
-            <p className="font-roboto text-xs font-medium">{web}</p>
+            <AlanText type="text" color="black" weight="default" size="xsmall">
+              {web}
+            </AlanText>
           </div>
         </div>
 
-        <blockquote className="mt-2 font-roboto text-sm">{body}</blockquote>
+        <blockquote className="mt-2">
+          <AlanText type="text" color="black" weight="default" size="small">
+            {body}
+          </AlanText>
+        </blockquote>
       </figure>
     </>
   );

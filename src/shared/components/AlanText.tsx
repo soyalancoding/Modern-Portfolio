@@ -12,6 +12,7 @@ interface AlanTextProps {
   type: string;
   color: "white" | "black" | "gray" | "default";
   size?:
+    | "xsmall"
     | "small"
     | "medium"
     | "large"
