@@ -9,6 +9,7 @@ import {
 
 interface AlanTextProps {
   children: React.ReactNode;
+  className?: string;
   type: string;
   color: "white" | "black" | "gray" | "default";
   size?:
@@ -24,7 +25,14 @@ interface AlanTextProps {
   weight?: "bold" | "default";
 }
 
-function AlanText({ children, type, color, size, weight }: AlanTextProps) {
+function AlanText({
+  children,
+  className,
+  type,
+  color,
+  size,
+  weight,
+}: AlanTextProps) {
   const [typeTitle, setTypeTitle] = useState("text");
 
   useEffect(() => {
@@ -42,6 +50,7 @@ function AlanText({ children, type, color, size, weight }: AlanTextProps) {
             setSizes(size || "default"),
             setColors(color),
             setWeights(weight || "default"),
+            className,
           )}
         >
           {children}

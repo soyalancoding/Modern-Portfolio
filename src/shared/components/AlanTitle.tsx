@@ -9,8 +9,9 @@ import {
 
 interface AlanTitleProps {
   children: React.ReactNode;
+  className?: string;
   type: string;
-  color: "white" | "black" | "gray" | "default";
+  color: "white" | "black" | "gray" | "blue" | "default";
   size?:
     | "small"
     | "medium"
@@ -23,7 +24,14 @@ interface AlanTitleProps {
   weight?: "bold" | "default";
 }
 
-function AlanTitle({ children, type, color, size, weight }: AlanTitleProps) {
+function AlanTitle({
+  children,
+  className,
+  type,
+  color,
+  size,
+  weight,
+}: AlanTitleProps) {
   const [typeTitle, setTypeTitle] = useState("title");
 
   useEffect(() => {
@@ -41,6 +49,7 @@ function AlanTitle({ children, type, color, size, weight }: AlanTitleProps) {
             setSizes(size || "default"),
             setColors(color),
             setWeights(weight || "default"),
+            className,
           )}
         >
           {children}

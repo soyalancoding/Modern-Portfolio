@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import MainLayout from "@/shared/layouts/MainLayout";
 // Views
 import Home from "@/shared/views/Home";
+import About from "@/shared/views/About";
 import NotFound from "@/shared/views/NotFound";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <MainLayout>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

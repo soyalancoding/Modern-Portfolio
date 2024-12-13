@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 // Components
 import AlanTitle from "../../shared/components/AlanTitle";
 import AlanText from "../../shared/components/AlanText";
+import AlanSpan from "@/shared/components/AlanSpan";
 import AlanButton from "../../shared/components/AlanButton";
 import AlanLazyLoad from "../../shared/components/AlanLazyLoad";
 // helpers
@@ -39,19 +40,22 @@ function HomeMain() {
 
           <div className="mb-7 mt-5">
             <AlanText type="text" color="gray" weight="default">
-              ¡Hola! soy <span className="font-bold text-gray-600">Alan</span>,
-              un{" "}
-              <span className="font-bold text-gray-600">
+              ¡Hola! soy{" "}
+              <AlanSpan weight="bold" color="grayDark">
+                Alan
+              </AlanSpan>
+              , un{" "}
+              <AlanSpan weight="bold" color="grayDark">
                 Software Solutions Development
-              </span>{" "}
+              </AlanSpan>{" "}
               con experiencia en desarrollo web. Especializado en{" "}
-              <span className="font-bold text-gray-600">
+              <AlanSpan weight="bold" color="grayDark">
                 automatización y despliegue continuo
-              </span>
+              </AlanSpan>
               , combinando habilidades de{" "}
-              <span className="font-bold text-gray-600">
+              <AlanSpan weight="bold" color="grayDark">
                 DevOps y desarrollo web
-              </span>{" "}
+              </AlanSpan>{" "}
               para crear soluciones eficientes y escalables. 💡
             </AlanText>
           </div>

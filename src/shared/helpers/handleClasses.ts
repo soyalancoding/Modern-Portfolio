@@ -2,6 +2,8 @@ const colorClasses = {
   white: "text-white",
   black: "text-black",
   gray: "text-gray-400",
+  grayDark: "text-gray-600",
+  blue: "text-sky-400",
   default:
     "bg-gradient-to-r from-sky-400 to-amber-500 bg-clip-text text-transparent",
 };
