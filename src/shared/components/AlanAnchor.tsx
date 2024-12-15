@@ -24,6 +24,7 @@ interface AlanAnchorProps {
   weight?: "bold" | "default";
   hover?: "white" | "black" | "gray" | "default";
   href: string;
+  target?: "_blank" | "_self" | "_parent" | "_top";
 }
 
 function AlanAnchor({
@@ -34,6 +35,7 @@ function AlanAnchor({
   weight,
   hover,
   href,
+  target,
 }: AlanAnchorProps) {
   const [typeTitle, setTypeTitle] = useState("anchor");
 
@@ -49,6 +51,7 @@ function AlanAnchor({
         <div className="max-w-fit">
           <a
             href={href}
+            target={target || ""}
             className={twMerge(
               "font-roboto",
               setSizes(size || "large"),

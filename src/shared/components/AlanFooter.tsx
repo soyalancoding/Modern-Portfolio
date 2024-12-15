@@ -77,7 +77,12 @@ function AlanFooter() {
               {socialsJson !== null
                 ? socialsJson.map((path) => (
                     <div key={path.name}>
-                      <AlanAnchor type="anchor" color="white" href={path.link}>
+                      <AlanAnchor
+                        type="anchor"
+                        color="white"
+                        href={path.link}
+                        target="_blank"
+                      >
                         {path.name}
                       </AlanAnchor>
                     </div>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 // Components
 import AlanLazyLoad from "@/shared/components/AlanLazyLoad";
@@ -7,6 +8,10 @@ import AlanButton from "@/shared/components/AlanButton";
 
 function NotFound() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   function onHandleHome() {
     navigate("/");

@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 // Components
 import ProjectsMain from "@/modules/projects/ProjectsMain";
 import ProjectsCards from "@/modules/projects/ProjectsCards";
 
 function Projects() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="grid grid-cols-1 gap-0 px-[30px] py-[30px] xl:grid-cols-6 xl:gap-8 xl:px-[220px]">
