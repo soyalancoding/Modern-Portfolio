@@ -1,7 +1,7 @@
 // Framer Motion
 import { AnimatePresence, motion } from "framer-motion";
 // Components
-import AlanStairs from "./AlanStairs";
+import AlanStairs from "@/shared/components/AlanStairs";
 
 function AlanStairTransition() {
   return (

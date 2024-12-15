@@ -1,7 +1,7 @@
 import { twMerge } from "tailwind-merge";
 // Components
-import AlanLazyLoad from "./AlanLazyLoad";
-import AlanText from "./AlanText";
+import AlanLazyLoad from "@/shared/components/AlanLazyLoad";
+import AlanText from "@/shared/components/AlanText";
 
 interface AlanCardProps {
   img: string;

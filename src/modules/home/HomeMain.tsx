@@ -2,11 +2,11 @@ import { useNavigate } from "react-router-dom";
 // Framer Motion
 import { motion } from "framer-motion";
 // Components
-import AlanTitle from "../../shared/components/AlanTitle";
-import AlanText from "../../shared/components/AlanText";
+import AlanTitle from "@/shared/components/AlanTitle";
+import AlanText from "@/shared/components/AlanText";
 import AlanSpan from "@/shared/components/AlanSpan";
-import AlanButton from "../../shared/components/AlanButton";
-import AlanLazyLoad from "../../shared/components/AlanLazyLoad";
+import AlanButton from "@/shared/components/AlanButton";
+import AlanLazyLoad from "@/shared/components/AlanLazyLoad";
 // helpers
 import { handleDownload } from "@/shared/helpers/handleDownload";
 

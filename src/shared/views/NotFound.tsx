@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 // Components
-import AlanLazyLoad from "../components/AlanLazyLoad";
-import AlanTitle from "../components/AlanTitle";
-import AlanText from "../components/AlanText";
-import AlanButton from "../components/AlanButton";
+import AlanLazyLoad from "@/shared/components/AlanLazyLoad";
+import AlanTitle from "@/shared/components/AlanTitle";
+import AlanText from "@/shared/components/AlanText";
+import AlanButton from "@/shared/components/AlanButton";
 
 function NotFound() {
   const navigate = useNavigate();

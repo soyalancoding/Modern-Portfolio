@@ -2,8 +2,8 @@ import React from "react";
 // Components
 import AlanHeader from "@/shared/components/AlanHeader";
 import AlanFooter from "@/shared/components/AlanFooter";
-import AlanStairTransition from "../components/AlanStairTransition";
-import AlanPageTransition from "../components/AlanPageTransition";
+import AlanStairTransition from "@/shared/components/AlanStairTransition";
+import AlanPageTransition from "@/shared/components/AlanPageTransition";
 
 function MainLayout({ children }: { children: React.ReactNode }) {
   return (
