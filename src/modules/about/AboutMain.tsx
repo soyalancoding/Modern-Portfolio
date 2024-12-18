@@ -25,7 +25,7 @@ function AboutMain() {
           <AlanCardGlobal>
             <div className="grid justify-items-center">
               <AlanLazyLoad
-                src="/images/memoji/memoji-computer.svg"
+                src="/images/memoji/memoji-punito.svg"
                 alt="Memoji computadora"
                 className="mb-6 w-[250px]"
               />

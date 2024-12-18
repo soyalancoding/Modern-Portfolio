@@ -5,6 +5,7 @@ import MainLayout from "@/shared/layouts/MainLayout";
 import Home from "@/shared/views/Home";
 import About from "@/shared/views/About";
 import Projects from "@/shared/views/Projects";
+import Contact from "@/shared/views/Contact";
 import NotFound from "@/shared/views/NotFound";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
