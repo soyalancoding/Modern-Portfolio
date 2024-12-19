@@ -90,7 +90,7 @@ function ProjectsMain() {
 
             <div className="mt-6">
               <div className="flex flex-row items-center">
-                <FaMapMarkerAlt className="mr-2 text-base" />
+                <FaMapMarkerAlt className="mr-2 text-base text-black dark:text-white" />
 
                 <AlanText
                   type="text"
@@ -103,7 +103,7 @@ function ProjectsMain() {
               </div>
 
               <div className="mt-2 flex flex-row items-center">
-                <FaCoffee className="mr-2 text-base" />
+                <FaCoffee className="mr-2 text-base text-black dark:text-white" />
 
                 <AlanText
                   type="text"
@@ -127,7 +127,7 @@ function ProjectsMain() {
                   target="_blank"
                   className="mr-3"
                 >
-                  <FaLinkedin className="text-lg hover:text-sky-400" />
+                  <FaLinkedin className="text-lg text-black hover:text-sky-600 dark:text-white dark:hover:text-yellow-400" />
                 </a>
 
                 <a
@@ -135,11 +135,11 @@ function ProjectsMain() {
                   target="_blank"
                   className="mr-3"
                 >
-                  <FaBehance className="text-lg hover:text-sky-400" />
+                  <FaBehance className="text-lg text-black hover:text-sky-600 dark:text-white dark:hover:text-yellow-400" />
                 </a>
 
                 <a href="https://github.com/alanmgg" target="_blank">
-                  <FaGithub className="text-lg hover:text-sky-400" />
+                  <FaGithub className="text-lg text-black hover:text-sky-600 dark:text-white dark:hover:text-yellow-400" />
                 </a>
               </div>
             </div>

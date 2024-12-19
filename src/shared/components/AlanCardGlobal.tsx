@@ -10,7 +10,7 @@ function AlanCardGlobal({ children, className }: AlanCardGlobalProps) {
     <>
       <figure
         className={twMerge(
-          "relative overflow-hidden rounded-lg border border-sky-400/[.6] bg-sky-400/[.01] p-3",
+          "relative overflow-hidden rounded-lg border border-sky-600/[.6] bg-sky-600/[.01] p-3 dark:border-yellow-400/[.6] dark:bg-yellow-400/[.01]",
           className,
         )}
       >

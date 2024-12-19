@@ -28,7 +28,7 @@ function AlanBentoGrid({ itemsProjects, cols, height }: AlanBentoGridProps) {
           <div
             key={index}
             className={twMerge(
-              "relative h-full w-full cursor-pointer overflow-hidden rounded-lg border border-sky-400/[.6] bg-sky-400/[.01] duration-100 hover:scale-105 hover:bg-sky-400/[.1]",
+              "relative h-full w-full cursor-pointer overflow-hidden rounded-lg border border-sky-600/[.6] bg-sky-600/[.01] duration-100 hover:scale-105 hover:bg-sky-600/[.1] dark:border-yellow-400/[.6] dark:bg-yellow-400/[.01] dark:hover:bg-yellow-400/[.1]",
               `col-span-${cols}`,
             )}
           >

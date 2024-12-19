@@ -1,11 +1,11 @@
 const colorClasses = {
   white: "text-white",
-  black: "text-black",
-  gray: "text-gray-400",
-  grayDark: "text-gray-600",
-  blue: "text-sky-400",
+  black: "text-black dark:text-white",
+  gray: "text-gray-400 dark:text-gray-200",
+  grayDark: "text-gray-600 dark:text-white",
+  blue: "text-sky-600 dark:text-yellow-400",
   default:
-    "bg-gradient-to-r from-sky-400 to-amber-500 bg-clip-text text-transparent",
+    "bg-gradient-to-r from-sky-500 to-yellow-400 bg-clip-text text-transparent",
 };
 
 const weightClasses = {
@@ -30,7 +30,7 @@ const hoverClasses = {
   black: "hover:text-black",
   gray: "hover:text-gray-400",
   default:
-    "hover:bg-gradient-to-r hover:from-sky-500 hover:to-amber-500 hover:bg-clip-text hover:font-bold hover:text-transparent",
+    "hover:bg-gradient-to-r hover:from-sky-500 hover:to-yellow-400 hover:bg-clip-text hover:font-bold hover:text-transparent",
 };
 
 type ColorKeys = keyof typeof colorClasses;

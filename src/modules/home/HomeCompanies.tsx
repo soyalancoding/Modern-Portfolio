@@ -14,7 +14,7 @@ function HomeCompanies() {
 
   return (
     <>
-      <div className="flex flex-col gap-3 px-[30px] py-[30px] xl:px-[220px]">
+      <div className="flex flex-col gap-3 px-[30px] py-[30px] pb-[60px] xl:px-[220px]">
         <div className="grid justify-items-center">
           <AlanTitle type="title" color="black" size="xxlarge" weight="bold">
             Empresas en las que he trabajado.
@@ -34,8 +34,8 @@ function HomeCompanies() {
             ))}
           </Marquee>
 
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/12 bg-gradient-to-r from-white"></div>
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/12 bg-gradient-to-l from-white"></div>
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/12 bg-gradient-to-r from-white dark:from-neutral-950"></div>
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/12 bg-gradient-to-l from-white dark:from-neutral-950"></div>
         </div>
       </div>
     </>

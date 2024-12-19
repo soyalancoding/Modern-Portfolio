@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 // Framer Motion
 import { motion } from "framer-motion";
@@ -9,9 +10,18 @@ import AlanButton from "@/shared/components/AlanButton";
 import AlanLazyLoad from "@/shared/components/AlanLazyLoad";
 // helpers
 import { handleDownload } from "@/shared/helpers/handleDownload";
+// Context
+import { ThemeContext } from "@/shared/contexts/ThemeContext";
 
 function HomeMain() {
   const navigate = useNavigate();
+
+  const themeContext = useContext(ThemeContext);
+  if (!themeContext) {
+    throw new Error("AlanToggleTheme must be used within a ThemeProvider");
+  }
+
+  const { theme } = themeContext;
 
   function onHandleContact() {
     navigate("/contact");
@@ -23,7 +33,7 @@ function HomeMain() {
 
   return (
     <>
-      <div className="mb-10 flex flex-col gap-10 px-[30px] py-[30px] lg:flex-row xl:px-[220px]">
+      <div className="mb-10 flex flex-col gap-10 bg-white px-[30px] py-[30px] dark:bg-neutral-950 lg:flex-row xl:px-[220px]">
         <div className="order-2 grid content-center lg:order-1">
           <AlanTitle
             type="title"
@@ -94,7 +104,9 @@ function HomeMain() {
               cx="253"
               cy="253"
               r="250"
-              stroke="rgb(56 189 248)"
+              stroke={
+                theme === "light" ? "rgb(2, 132, 199)" : "rgb(250, 204, 21)"
+              }
               strokeWidth="4"
               strokeLinecap="round"
               strokeLinejoin="round"

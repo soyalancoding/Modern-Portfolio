@@ -26,9 +26,9 @@ function HomeProjects() {
             <a
               href="https://alancoding-crossy-road.vercel.app/"
               target="_blank"
-              className="relative cursor-pointer duration-100 hover:scale-105 hover:bg-sky-400/[.1] lg:row-span-2"
+              className="relative cursor-pointer duration-100 hover:scale-105 hover:bg-sky-600/[.1] dark:hover:bg-yellow-400/[.1] lg:row-span-2"
             >
-              <div className="absolute inset-px rounded-lg bg-sky-400/[.01] lg:rounded-l-[2rem]"></div>
+              <div className="absolute inset-px rounded-lg bg-sky-600/[.01] dark:bg-yellow-400/[.01] lg:rounded-l-[2rem]"></div>
 
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
                 <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
@@ -66,15 +66,15 @@ function HomeProjects() {
                 </div>
               </div>
 
-              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-sky-400/[.6] lg:rounded-l-[2rem]"></div>
+              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-sky-600/[.6] dark:ring-yellow-400/[.6] lg:rounded-l-[2rem]"></div>
             </a>
 
             <a
               href="https://snack.expo.dev/@alanmgg/crypto-market"
               target="_blank"
-              className="relative cursor-pointer duration-100 hover:scale-105 hover:bg-sky-400/[.1] max-lg:row-start-1"
+              className="relative cursor-pointer duration-100 hover:scale-105 hover:bg-sky-600/[.1] dark:hover:bg-yellow-400/[.1] max-lg:row-start-1"
             >
-              <div className="absolute inset-px rounded-lg bg-sky-400/[.01] max-lg:rounded-t-[2rem]"></div>
+              <div className="absolute inset-px rounded-lg bg-sky-600/[.01] dark:bg-yellow-400/[.01] max-lg:rounded-t-[2rem]"></div>
 
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10">
@@ -109,15 +109,15 @@ function HomeProjects() {
                 </div>
               </div>
 
-              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-sky-400/[.6] max-lg:rounded-t-[2rem]"></div>
+              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-sky-600/[.6] dark:ring-yellow-400/[.6] max-lg:rounded-t-[2rem]"></div>
             </a>
 
             <a
               href="https://www.figma.com/file/Qqkt0eyEPcdFn3Esv9XiDZ/Basic-Look?type=design&node-id=2-2&mode=design"
               target="_blank"
-              className="relative cursor-pointer duration-100 hover:scale-105 hover:bg-sky-400/[.1] max-lg:row-start-3 lg:col-start-2 lg:row-start-2"
+              className="relative cursor-pointer duration-100 hover:scale-105 hover:bg-sky-600/[.1] dark:hover:bg-yellow-400/[.1] max-lg:row-start-3 lg:col-start-2 lg:row-start-2"
             >
-              <div className="absolute inset-px rounded-lg bg-sky-400/[.01]"></div>
+              <div className="absolute inset-px rounded-lg bg-sky-600/[.01] dark:bg-yellow-400/[.01]"></div>
 
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10">
@@ -152,15 +152,15 @@ function HomeProjects() {
                 </div>
               </div>
 
-              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-sky-400/[.6]"></div>
+              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-sky-600/[.6] dark:ring-yellow-400/[.6]"></div>
             </a>
 
             <a
               href="https://alancoding-macos.vercel.app/"
               target="_blank"
-              className="relative cursor-pointer duration-100 hover:scale-105 hover:bg-sky-400/[.1] lg:row-span-2"
+              className="relative cursor-pointer duration-100 hover:scale-105 hover:bg-sky-600/[.1] dark:hover:bg-yellow-400/[.1] lg:row-span-2"
             >
-              <div className="absolute inset-px rounded-lg bg-sky-400/[.01] max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+              <div className="absolute inset-px rounded-lg bg-sky-600/[.01] dark:bg-yellow-400/[.01] max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
 
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
                 <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
@@ -197,7 +197,7 @@ function HomeProjects() {
                 </div>
               </div>
 
-              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-sky-400/[.6] max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-sky-600/[.6] dark:ring-yellow-400/[.6] max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
             </a>
           </div>
         </div>

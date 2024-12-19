@@ -12,7 +12,7 @@ function AlanButton({ children, fit = true, clickButton }: AlanButtonProps) {
     <>
       <div
         className={twMerge(
-          "rounded-lg bg-gradient-to-r from-sky-400 to-amber-500",
+          "rounded-lg bg-gradient-to-r from-sky-600 to-yellow-400",
           fit === true ? "w-fit" : "w-full",
         )}
       >

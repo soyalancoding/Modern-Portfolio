@@ -12,10 +12,12 @@ function Home() {
 
   return (
     <>
-      <HomeMain />
-      <HomeStats />
-      <HomeProjects />
-      <HomeCompanies />
+      <div className="bg-white dark:bg-neutral-950">
+        <HomeMain />
+        <HomeStats />
+        <HomeProjects />
+        <HomeCompanies />
+      </div>
     </>
   );
 }

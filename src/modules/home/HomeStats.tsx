@@ -1,5 +1,5 @@
+import { twMerge } from "tailwind-merge";
 import CountUp from "react-countup";
-// Icons
 
 function HomeStats() {
   const stats = [
@@ -11,7 +11,7 @@ function HomeStats() {
 
   return (
     <>
-      <section className="mb-8 mt-6 px-[30px] py-[30px] lg:mb-16 lg:mt-20 xl:px-[220px]">
+      <section className="mb-8 mt-6 bg-white px-[30px] py-[30px] dark:bg-neutral-950 lg:mb-16 lg:mt-20 xl:px-[220px]">
         <div className="container mx-auto">
           <div className="mx-auto flex max-w-[80vw] flex-wrap gap-6 lg:max-w-none">
             {stats.map((stat, index) => {
@@ -20,7 +20,7 @@ function HomeStats() {
                   key={index}
                   className="flex flex-1 flex-col lg:justify-start"
                 >
-                  <p className="font-montserrat text-base font-bold text-gray-600 md:text-lg lg:text-xl">
+                  <p className="font-montserrat text-base font-bold text-gray-600 dark:text-white md:text-lg lg:text-xl">
                     Más de
                   </p>
 
@@ -29,10 +29,15 @@ function HomeStats() {
                       end={stat.value}
                       duration={4}
                       delay={1}
-                      className="bg-gradient-to-r from-sky-400 to-amber-500 bg-clip-text font-montserrat text-2xl font-bold text-transparent md:text-4xl lg:text-5xl"
+                      className="bg-gradient-to-r from-sky-600 to-yellow-400 bg-clip-text font-montserrat text-2xl font-bold text-transparent md:text-4xl lg:text-5xl"
                     />
                     <p
-                      className={`${stat.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"} font-roboto`}
+                      className={twMerge(
+                        "font-roboto text-black dark:text-white",
+                        stat.text.length < 15
+                          ? "max-w-[100px]"
+                          : "max-w-[150px]",
+                      )}
                     >
                       {stat.text}
                     </p>

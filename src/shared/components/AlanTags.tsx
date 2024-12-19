@@ -14,7 +14,7 @@ function AlanTags({ className, tags }: AlanTagsProps) {
         {tags.map((tag, index) => (
           <span
             key={index}
-            className="mb-2 mr-2 rounded-xl bg-sky-500 px-2 py-2 lg:px-4"
+            className="mb-2 mr-2 rounded-xl bg-sky-500 px-2 py-2 dark:bg-yellow-400 lg:px-4"
           >
             <AlanText type="text" color="white" weight="bold" size="xsmall">
               {tag}

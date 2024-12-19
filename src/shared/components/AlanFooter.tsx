@@ -23,7 +23,7 @@ function AlanFooter() {
 
   return (
     <>
-      <footer className="mx-auto mt-[20px] bg-black px-[30px] py-[50px] xl:px-[220px]">
+      <footer className="mx-auto bg-black px-[30px] py-[50px] xl:px-[220px]">
         <div className="mb-10">
           <AlanTitle type="title" color="white" size="xxxxlarge" weight="bold">
             ¿Listo para hacer algo increíble?

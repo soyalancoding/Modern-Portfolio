@@ -21,7 +21,7 @@ function AboutTechnologies() {
             <div className="mb-2">
               <AlanCardGlobal
                 key={item.name}
-                className="transform cursor-pointer transition duration-100 hover:scale-105 hover:bg-sky-400/[.1]"
+                className="transform cursor-pointer transition duration-100 hover:scale-105 hover:bg-sky-600/[.1] dark:hover:bg-yellow-400/[.1]"
               >
                 <div className="flex h-6 items-center">
                   <AlanLazyLoad

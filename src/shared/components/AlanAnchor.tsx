@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { twMerge } from "tailwind-merge";
+// Components
+import AlanText from "@/shared/components/AlanText";
 // Helpers
 import {
   setColors,
