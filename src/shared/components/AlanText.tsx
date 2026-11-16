@@ -46,7 +46,7 @@ function AlanText({
       {typeTitle === "text" ? (
         <p
           className={twMerge(
-            "w-fit font-roboto",
+            "font-roboto w-fit",
             setSizes(size || "default"),
             setColors(color),
             setWeights(weight || "default"),

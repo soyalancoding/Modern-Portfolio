@@ -7,7 +7,7 @@ function AlanStairTransition() {
   return (
     <>
       <AnimatePresence>
-        <div className="pointer-events-none fixed left-0 right-0 top-0 z-50 flex h-screen w-screen">
+        <div className="pointer-events-none fixed top-0 right-0 left-0 z-50 flex h-screen w-screen">
           <AlanStairs />
         </div>
 

@@ -45,7 +45,7 @@ function AlanTitle({
       {typeTitle === "title" ? (
         <h1
           className={twMerge(
-            "w-fit font-montserrat",
+            "font-montserrat w-fit",
             setSizes(size || "default"),
             setColors(color),
             setWeights(weight || "default"),

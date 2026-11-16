@@ -10,7 +10,7 @@ function Contact() {
 
   return (
     <>
-      <div className="grid grid-cols-1 gap-0 bg-white px-[30px] py-[30px] dark:bg-neutral-950 xl:grid-cols-6 xl:gap-8 xl:px-[220px]">
+      <div className="grid grid-cols-1 gap-0 bg-white px-[30px] py-[30px] xl:grid-cols-6 xl:gap-8 xl:px-[220px] dark:bg-neutral-950">
         <div className="col-span-2">
           <ContactMain />
         </div>

@@ -40,7 +40,7 @@ function AlanHeader() {
 
   return (
     <>
-      <header className="z-20 bg-white px-[30px] py-[20px] dark:bg-neutral-950 xl:px-[220px]">
+      <header className="z-20 bg-white px-[30px] py-[20px] xl:px-[220px] dark:bg-neutral-950">
         <div className="grid grid-cols-2 gap-8">
           <a href="/" className="max-w-fit">
             <AlanLazyLoad

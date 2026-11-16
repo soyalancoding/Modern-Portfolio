@@ -26,12 +26,12 @@ function HomeProjects() {
             <a
               href="https://alancoding-crossy-road.vercel.app/"
               target="_blank"
-              className="relative cursor-pointer duration-100 hover:scale-105 hover:bg-sky-600/[.1] dark:hover:bg-yellow-400/[.1] lg:row-span-2"
+              className="relative cursor-pointer duration-100 hover:scale-105 hover:bg-sky-600/[.1] lg:row-span-2 dark:hover:bg-yellow-400/[.1]"
             >
-              <div className="absolute inset-px rounded-lg bg-sky-600/[.01] dark:bg-yellow-400/[.01] lg:rounded-l-[2rem]"></div>
+              <div className="absolute inset-px rounded-lg bg-sky-600/[.01] lg:rounded-l-[2rem] dark:bg-yellow-400/[.01]"></div>
 
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
-                <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+                <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
                   <AlanTitle
                     type="title"
                     color="black"
@@ -55,8 +55,8 @@ function HomeProjects() {
                   </div>
                 </div>
 
-                <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
-                  <div className="absolute inset-x-10 bottom-0 top-6 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
+                <div className="[container-type:inline-size] relative min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
+                  <div className="absolute inset-x-10 top-6 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
                     <AlanLazyLoad
                       className="size-full object-cover object-top"
                       src="images/home/crossy-road.webp"
@@ -66,15 +66,15 @@ function HomeProjects() {
                 </div>
               </div>
 
-              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-sky-600/[.6] dark:ring-yellow-400/[.6] lg:rounded-l-[2rem]"></div>
+              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-sky-600/[.6] lg:rounded-l-[2rem] dark:ring-yellow-400/[.6]"></div>
             </a>
 
             <a
               href="https://snack.expo.dev/@alanmgg/crypto-market"
               target="_blank"
-              className="relative cursor-pointer duration-100 hover:scale-105 hover:bg-sky-600/[.1] dark:hover:bg-yellow-400/[.1] max-lg:row-start-1"
+              className="relative cursor-pointer duration-100 hover:scale-105 hover:bg-sky-600/[.1] max-lg:row-start-1 dark:hover:bg-yellow-400/[.1]"
             >
-              <div className="absolute inset-px rounded-lg bg-sky-600/[.01] dark:bg-yellow-400/[.01] max-lg:rounded-t-[2rem]"></div>
+              <div className="absolute inset-px rounded-lg bg-sky-600/[.01] max-lg:rounded-t-[2rem] dark:bg-yellow-400/[.01]"></div>
 
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10">
@@ -100,7 +100,7 @@ function HomeProjects() {
                     </AlanText>
                   </div>
                 </div>
-                <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
+                <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
                   <AlanLazyLoad
                     className="w-full max-lg:max-w-xs"
                     src="images/home/crypto-market.webp"
@@ -109,13 +109,13 @@ function HomeProjects() {
                 </div>
               </div>
 
-              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-sky-600/[.6] dark:ring-yellow-400/[.6] max-lg:rounded-t-[2rem]"></div>
+              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-sky-600/[.6] max-lg:rounded-t-[2rem] dark:ring-yellow-400/[.6]"></div>
             </a>
 
             <a
               href="https://www.figma.com/file/Qqkt0eyEPcdFn3Esv9XiDZ/Basic-Look?type=design&node-id=2-2&mode=design"
               target="_blank"
-              className="relative cursor-pointer duration-100 hover:scale-105 hover:bg-sky-600/[.1] dark:hover:bg-yellow-400/[.1] max-lg:row-start-3 lg:col-start-2 lg:row-start-2"
+              className="relative cursor-pointer duration-100 hover:scale-105 hover:bg-sky-600/[.1] max-lg:row-start-3 lg:col-start-2 lg:row-start-2 dark:hover:bg-yellow-400/[.1]"
             >
               <div className="absolute inset-px rounded-lg bg-sky-600/[.01] dark:bg-yellow-400/[.01]"></div>
 
@@ -143,7 +143,7 @@ function HomeProjects() {
                   </div>
                 </div>
 
-                <div className="flex flex-1 items-center justify-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
+                <div className="[container-type:inline-size] flex flex-1 items-center justify-center max-lg:py-6 lg:pb-2">
                   <AlanLazyLoad
                     className="mt-2 h-[min(158px,40cqw)]"
                     src="images/home/basic-look.webp"
@@ -158,12 +158,12 @@ function HomeProjects() {
             <a
               href="https://alancoding-macos.vercel.app/"
               target="_blank"
-              className="relative cursor-pointer duration-100 hover:scale-105 hover:bg-sky-600/[.1] dark:hover:bg-yellow-400/[.1] lg:row-span-2"
+              className="relative cursor-pointer duration-100 hover:scale-105 hover:bg-sky-600/[.1] lg:row-span-2 dark:hover:bg-yellow-400/[.1]"
             >
-              <div className="absolute inset-px rounded-lg bg-sky-600/[.01] dark:bg-yellow-400/[.01] max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+              <div className="absolute inset-px rounded-lg bg-sky-600/[.01] max-lg:rounded-b-[2rem] lg:rounded-r-[2rem] dark:bg-yellow-400/[.01]"></div>
 
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
-                <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+                <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
                   <AlanTitle
                     type="title"
                     color="black"
@@ -186,8 +186,8 @@ function HomeProjects() {
                   </div>
                 </div>
 
-                <div className="relative min-h-[20rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm lg:min-h-[30rem]">
-                  <div className="absolute bottom-0 left-10 top-6 overflow-hidden">
+                <div className="[container-type:inline-size] relative min-h-[20rem] w-full grow max-lg:mx-auto max-lg:max-w-sm lg:min-h-[30rem]">
+                  <div className="absolute top-6 bottom-0 left-10 overflow-hidden">
                     <AlanLazyLoad
                       className="size-full min-h-[20rem] object-cover object-top lg:min-h-[30rem]"
                       src="images/home/macos.webp"
@@ -197,12 +197,12 @@ function HomeProjects() {
                 </div>
               </div>
 
-              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-sky-600/[.6] dark:ring-yellow-400/[.6] max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-sky-600/[.6] max-lg:rounded-b-[2rem] lg:rounded-r-[2rem] dark:ring-yellow-400/[.6]"></div>
             </a>
           </div>
         </div>
 
-        <div className="mb-10 mt-4 flex justify-center">
+        <div className="mt-4 mb-10 flex justify-center">
           <AlanButton clickButton={() => onHandleProjects()}>
             <AlanText type="text" color="white" weight="default">
               Ver más

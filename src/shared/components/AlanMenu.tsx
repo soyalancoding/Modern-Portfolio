@@ -22,7 +22,7 @@ function AlanMenu({ openMenu }: { openMenu: boolean }) {
     <>
       <div
         className={twMerge(
-          "fixed left-0 top-0 z-10 mx-auto w-full transform bg-white/90 px-[30px] py-[30px] backdrop-blur-sm transition-all duration-500 ease-in-out dark:bg-neutral-950/80 xl:px-[220px]",
+          "fixed top-0 left-0 z-10 mx-auto w-full transform bg-white/90 px-[30px] py-[30px] backdrop-blur-sm transition-all duration-500 ease-in-out xl:px-[220px] dark:bg-neutral-950/80",
           openMenuState ? "translate-y-20" : "-translate-y-full",
         )}
       >

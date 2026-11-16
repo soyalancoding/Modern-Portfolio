@@ -18,7 +18,7 @@ function AlanButton({ children, fit = true, clickButton }: AlanButtonProps) {
       >
         <button
           className={twMerge(
-            "relative -left-[5px] -top-[5px] z-10 flex items-center justify-center rounded-lg bg-black px-5 py-3 duration-200 ease-in-out hover:left-0 hover:top-0",
+            "relative -top-[5px] -left-[5px] z-10 flex items-center justify-center rounded-lg bg-black px-5 py-3 duration-200 ease-in-out hover:top-0 hover:left-0",
             fit === true ? "w-fit" : "w-full",
           )}
           onClick={() => clickButton()}
